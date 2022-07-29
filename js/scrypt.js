@@ -82,4 +82,20 @@ function practice6() {
     ctx.closePath()
     ctx.fill()
 }
-practice6()
+
+
+// Рисование прямоугольников
+
+// ctx.strokeRect(50, 50, 100, 100);
+
+// ctx.fillRect(50, 50, 100, 100);
+
+// ctx.rect(30, 50, 150, 80);
+// ctx.stroke()
+// ctx.fill()
+
+
+// Метод clearRect - работает как стерка
+
+ctx.fillRect(50, 50, 100, 100);
+ctx.clearRect(70, 70, 50, 50);
