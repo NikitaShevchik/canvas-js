@@ -97,5 +97,19 @@ function practice6() {
 
 // Метод clearRect - работает как стерка
 
-ctx.fillRect(50, 50, 100, 100);
-ctx.clearRect(70, 70, 50, 50);
+// ctx.fillRect(50, 50, 100, 100);
+// ctx.clearRect(70, 70, 50, 50);
+
+
+// Рисование окружностей через canvas на JavaScript
+
+function getRadians(degrees) {
+    return (Math.PI / 180) * degrees;
+}
+
+ctx.arc(100, 100, 50, 0, getRadians(80));
+
+ctx.fillStyle = 'green'; // Смена цвета линии в canvas на JavaScript
+
+ctx.closePath()
+ctx.fill();
