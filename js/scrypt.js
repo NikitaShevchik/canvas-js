@@ -107,9 +107,10 @@ function getRadians(degrees) {
     return (Math.PI / 180) * degrees;
 }
 
-ctx.arc(100, 100, 50, 0, getRadians(80));
+ctx.arc(100, 100, 50, 0, getRadians(100));
 
 ctx.fillStyle = 'green'; // Смена цвета линии в canvas на JavaScript
-
+ctx.strokeStyle = 'red'
 ctx.closePath()
+ctx.stroke();
 ctx.fill();
