@@ -141,22 +141,36 @@ function practFillAndStyle2() {
     ctx.fill()
 }
 
-ctx.beginPath();
-ctx.moveTo(80, 50);
-ctx.lineTo(80, 100);
-ctx.lineTo(130, 100);
-ctx.lineTo(130, 50);
-ctx.closePath();
-ctx.fillStyle = 'green'
-ctx.fill();
+function practFillAndStyle3() {
+    ctx.beginPath();
+    ctx.moveTo(80, 50);
+    ctx.lineTo(80, 100);
+    ctx.lineTo(130, 100);
+    ctx.lineTo(130, 50);
+    ctx.closePath();
+    ctx.fillStyle = 'green'
+    ctx.fill();
 
-ctx.beginPath();
-ctx.moveTo(80, 120);
-ctx.lineTo(80, 170);
-ctx.lineTo(130, 170);
-ctx.lineTo(130, 120);
-ctx.closePath();
-ctx.fillStyle = 'red'
-ctx.fill();
+    ctx.beginPath();
+    ctx.moveTo(80, 120);
+    ctx.lineTo(80, 170);
+    ctx.lineTo(130, 170);
+    ctx.lineTo(130, 120);
+    ctx.closePath();
+    ctx.fillStyle = 'red'
+    ctx.fill();
+}
+
+// Смена размера линий в canvas на JavaScript
+function lineChangeSize() {
+    ctx.beginPath();
+    ctx.moveTo(50, 50);
+    ctx.rect(50, 50, 100, 100)
+    ctx.lineWidth = 30;
+    ctx.stroke();
+}
+
+// Циклы в canvas на JavaScript
+
 
 
