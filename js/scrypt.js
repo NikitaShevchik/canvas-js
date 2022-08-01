@@ -3,6 +3,7 @@
 let canvas = document.querySelector('canvas');
 let ctx = canvas.getContext('2d');
 
+
 function bird() {
     ctx.beginPath();
     ctx.moveTo(50, 100);
@@ -102,15 +103,60 @@ function practice6() {
 
 
 // Рисование окружностей через canvas на JavaScript
+function arcCanvas() {
+    ctx.arc(100, 100, 50, 0, getRadians(200));
+    ctx.fillStyle = 'yellow'; // Смена цвета заливки в canvas на JavaScript
+    ctx.strokeStyle = 'green' // Смена цвета линии в canvas на JavaScript
+    ctx.closePath()
+    ctx.stroke();
+    ctx.fill();
 
+}
 function getRadians(degrees) {
     return (Math.PI / 180) * degrees;
 }
 
-ctx.arc(100, 100, 50, 0, getRadians(100));
+function practFillAndStyle() {
+    ctx.beginPath();
+    ctx.moveTo(50, 50);
+    ctx.lineTo(150, 50);
+    ctx.strokeStyle = 'red';
+    ctx.stroke()
 
-ctx.fillStyle = 'green'; // Смена цвета линии в canvas на JavaScript
-ctx.strokeStyle = 'red'
-ctx.closePath()
-ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(50, 60);
+    ctx.strokeStyle = 'green';
+    ctx.lineTo(150, 60)
+    ctx.stroke()
+}
+
+function practFillAndStyle2() {
+    ctx.beginPath();
+    ctx.moveTo(50, 50);
+    ctx.lineTo(50, 150);
+    ctx.lineTo(150, 150);
+    ctx.lineTo(150, 50);
+    ctx.closePath();
+    ctx.fillStyle = 'green'
+    ctx.fill()
+}
+
+ctx.beginPath();
+ctx.moveTo(80, 50);
+ctx.lineTo(80, 100);
+ctx.lineTo(130, 100);
+ctx.lineTo(130, 50);
+ctx.closePath();
+ctx.fillStyle = 'green'
 ctx.fill();
+
+ctx.beginPath();
+ctx.moveTo(80, 120);
+ctx.lineTo(80, 170);
+ctx.lineTo(130, 170);
+ctx.lineTo(130, 120);
+ctx.closePath();
+ctx.fillStyle = 'red'
+ctx.fill();
+
+
