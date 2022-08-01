@@ -172,5 +172,11 @@ function lineChangeSize() {
 
 // Циклы в canvas на JavaScript
 
-
+for (let i = 1; i < 10; i++) {
+    ctx.moveTo(50, 50 + (10 * i));
+    ctx.lineTo(150, 50 + (10 * i));
+    ctx.moveTo(50 + (10 * i), 50);
+    ctx.lineTo(50 + (10 * i), 150)
+}
+ctx.stroke();
 
